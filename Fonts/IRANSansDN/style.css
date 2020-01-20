@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: IRANSansDN;
+    font-style: normal;
+    font-weight: bold;
+    src: url('eot/IRANSansDN-Bold.eot');
+    src: url('eot/IRANSansDN-Boldd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSansDN-Bold.woff2') format('woff2'),
+    url('woff/IRANSansDN-Bold.woff') format('woff'),
+    url('ttf/IRANSansDN-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansDN;
+    font-style: normal;
+    font-weight: 300;
+    src: url('eot/IRANSansDN-Light.eot');
+    src: url('eot/IRANSansDN-Lightd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSansDN-Light.woff2') format('woff2'),
+    url('woff/IRANSansDN-Light.woff') format('woff'),
+    url('ttf/IRANSansDN-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansDN;
+    font-style: normal;
+    font-weight: normal;
+    src: url('eot/IRANSansDN.eot');
+    src: url('eot/IRANSansDNd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSansDN.woff2') format('woff2'),
+    url('woff/IRANSansDN.woff') format('woff'),
+    url('ttf/IRANSansDN.ttf') format('truetype');
+}

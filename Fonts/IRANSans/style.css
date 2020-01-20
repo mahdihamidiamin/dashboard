@@ -1,0 +1,60 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('eot/IRANSans-Black.eot');
+    src: url('eot/IRANSans-Blackd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans-Black.woff2') format('woff2'),
+    url('woff/IRANSans-Black.woff') format('woff'),
+    url('ttf/IRANSans-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('eot/IRANSans-Bold.eot');
+    src: url('eot/IRANSans-Boldd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans-Bold.woff2') format('woff2'),
+    url('woff/IRANSans-Bold.woff') format('woff'),
+    url('ttf/IRANSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 600;
+    src: url('eot/IRANSans-Medium.eot');
+    src: url('eot/IRANSans-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans-Medium.woff2') format('woff2'),
+    url('woff/IRANSans-Medium.woff') format('woff'),
+    url('ttf/IRANSans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('eot/IRANSans-Light.eot');
+    src: url('eot/IRANSans-Lightd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans-Light.woff2') format('woff2'),
+    url('woff/IRANSans-Light.woff') format('woff'),
+    url('ttf/IRANSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('eot/IRANSans-UltraLight.eot');
+    src: url('eot/IRANSans-UltraLightd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans-UltraLight.woff2') format('woff2'),
+    url('woff/IRANSans-UltraLight.woff') format('woff'),
+    url('ttf/IRANSans-UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('eot/IRANSans.eot');
+    src: url('eot/IRANSansd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/IRANSans.woff2') format('woff2'),
+    url('woff/IRANSans.woff') format('woff'),
+    url('ttf/IRANSans.ttf') format('truetype');
+}

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="Scripts/jquery-1.8.3.min.js"></script>
+    <script src="Scripts/navbar.js"></script>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <script src="Scripts/all.min.js"></script>
+    <script src="Scripts/custom.js"></script>
+    <link rel="stylesheet" href="Css/navbar.css">
+    <link rel="stylesheet" href="Css/Style.css">
+
+
+</head>
+<body>
+<!--HEADER-->
+<header></header>
+<!--HEADER-->
+<!--MENU-->
+<nav class="r-nav navigation-menu side-nav close-nav ">
+    <div id="accordian" class="content-navigation-menu">
+        <div class="r-collapse">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="list-nav-content">
+
+            <li class="active">
+                <a href="/">
+
+                    <span>داشبورد</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>صفحات</span>
+                </a>
+                <ul>
+                    <li>
+                        <a>
+                            <i style="translateY(2px);transform: rotate(-45deg);" class="far fa-space-shuttle"></i>
+                            <span>پایه</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="info.html">
+                                    <span>باتن ها</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>باتن لیست ها</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="history.html">
+                                    <span>آیکون ها</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fal fa-image-polaroid"></i>
+                            <span>سفارشی</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="history.html">
+                            <i class="far fa-shapes"></i>
+                            <span>آیکون ها</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>خدمات</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="service.html">
+
+                            <span> خدمات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="service-item.html">
+
+                            <span>درباره خدمات</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>اخبار</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="news.html">
+
+                            <span>اخبار</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news-item.html">
+
+                            <span>ادامه مطلب اخبار</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.html">
+
+                    <span>تماس با ما</span>
+                </a>
+            </li>
+
+        </ul>
+        <a href="/" class="company-logo">
+            <img src="Img/Logo/logo-9.png"/>
+        </a>
+        <ul class="menu-item-setting">
+            <li>
+                <a class="btn-menu" onclick="openBox(this ,'search-box')">
+                    <i class="fal fa-search"></i>
+                </a>
+                <div class="white-box-menu" id="search-box">
+                    <div class="search-box">
+                        <input type="text" placeholder="جستجو..">
+                        <a href="#">
+                            <i class="fal fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a class="btn-menu" onclick="openBox(this ,'notification-box')">
+                    <i class="fal fa-bell"></i>
+                </a>
+                <div class="white-box-menu" id="notification-box">
+                    <div class="notification-box">
+                        <div class="notification-box-head">
+                          <span>
+                              اعلان های کاربر
+                          </span>
+                        </div>
+                        <div class="notification-box-content">
+                            <ul class="tab-item">
+                                <li class="active">
+                                    <a href="">
+                                        هشدار ها
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""> رویداد ها</a>
+                                </li>
+                                <li>
+                                    <a href=""> لاگ ها</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content notification-dec">
+                                <ul>
+                                    <li class="report">
+                                        گزارش جدید دریافت شده است
+                                        <span>
+                                            10 ساعت پیش
+                                        </span>
+                                    </li>
+                                  <li class="order">
+                                        گزارش جدید دریافت شده است
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+
+                            </div>
+                            <div class="tab-content">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fal fa-cog"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fal fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</nav>
+<!--MENU-->
+</body>
+</html>
