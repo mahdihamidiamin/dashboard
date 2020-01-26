@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <script src="Scripts/jquery-1.8.3.min.js"></script>
     <script src="Scripts/navbar.js"></script>
     <link rel="stylesheet" href="Css/all.min.css">
@@ -15,58 +16,14 @@
     <link rel="stylesheet" href="Css/r-slider.css">
     <script src="Scripts/r-slider.js"></script>
     <link rel="stylesheet" href="Css/Style.css">
+
+
 </head>
 <body>
-
-
-<script>
-    function menuBox(element, target) {
-
-        var tar = $("#" + target)
-        debugger;
-        if ($(tar).hasClass("active")) {
-            $(tar).removeClass("active");
-        } else {
-            $(tar).addClass('active');
-        }
-
-    }
-
-    $(document).mouseup(function (e) {
-        var container = $("#user-image-menu");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-            $(container).removeClass("active");
-
-        }
-    });
-
-    $(document).ready(function () {
-
-    })
-</script>
-<div class="header">
-    <a class="mini-menu" href="">
-
-    </a>
-    <div class="user-profile-menu">
-        <a onclick="menuBox(this , 'user-image-menu')" class="user-img">
-            <img src="Img/avatar.jpg"/>
-            <span>مدیر سامانه</span>
-        </a>
-        <div class="user-image-menu" id="user-image-menu">
-        </div>
-
-        <div class="menu-setting">
-            <ul>
-                <li>
-                    صفحات
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+<!--HEADER-->
+<header></header>
+<!--HEADER-->
+<!--MENU-->
 <nav class="r-nav navigation-menu side-nav close-nav ">
     <div id="accordian" class="content-navigation-menu">
         <div class="r-collapse">
@@ -258,5 +215,85 @@
     </div>
 
 </nav>
+<!--MENU-->
+
+
+<!--Slider-->
+
+<div class="slide-show main_slider type1" id="main_slider" style="display: none">
+    <div class="slide-items-box" style="background-image: url('Img/slider/img-slider1.jpeg')">
+        <div class="content-slide">
+            <span>پنجمین همایش کاربرد </span>
+            <p>پس از برگزاری چهار نوبت موفق همایش کاربرد تکنیک داده ستانده </p>
+
+            <div class="button-group">
+                <input type="button" class="r-slider-btn btn-view" name="name" value="اطلاعات بیشتر">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="slide-items-box" style="background-image: url('Img/slider/img-slider2.jpeg')">
+        <div class="content-slide"><span>شرکت فناوری اطلاعات همراه رسپینا رادین </span>
+            <p> آدرس: تهران - خیابان دکتر مرتضی لبافی نژاد - حد فاصل کارگر و جمالزاده - پلاک 322 -واحد 3 - شرکت فناوری
+                اطلاعات همراه رسپینا رادین </p>
+
+            <div class="button-group"><input type="button" class="r-slider-btn btn-view" name="name" value="مشاهده">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="dot-slider"></div>
+
+
+</div>
+<script>
+
+
+</script>
+<div class="slide-show fade-texts" id="fade_texts">
+
+    <div class="slider-item">
+        <img src="Img/slider/img-slider1.jpeg" alt="">
+    </div>
+    <div class="slider-item">
+        <img src="Img/slider/img-slider2.jpeg" alt="">
+    </div>
+    <div class="slider-item">
+        <img src="Img/slider/img-slider3.jpg" alt="">
+    </div>
+    <div>
+
+    </div>
+    <div class="dot-slider"></div>
+
+
+</div>
+<button class="btn-r btn btn-info">
+    بعدی
+</button>
+
+<script>
+
+    $.setSettingSlider(".fade-texts",
+        {
+            height: "500px",
+            width: "100%",
+            isShow: true,
+            slider_control: "icon",
+            name: "main_slider",
+            type_change: "bottom-to-top",
+            time_change: 10000
+
+        });
+
+</script>
+
+<!--Slider-->
 </body>
 </html>
