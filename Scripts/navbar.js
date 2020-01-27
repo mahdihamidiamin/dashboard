@@ -48,13 +48,7 @@ function navbar() {
     $('.list-nav-content > li  ul').addClass('dropdown-li');
     $('.list-nav-content > li .dropdown-li').parent().addClass('has-child');
     var d = deviceType();
-    if (d == "Mobile" || d == "Tablet") {
         mobileMenu();
-    } else if (d == "Desktop" && $(window).width() <= 768) {
-        mobileMenu();
-    } else if (d == "Desktop") {
-        desktopMenu();
-    }
 }
 
 $(document).mouseup(function (e) {
@@ -221,3 +215,9 @@ $(document).ready(function () {
 
 
 
+$('body').show();
+NProgress.start();
+setTimeout(function () {
+    NProgress.done();
+    $('.fade').removeClass('out');
+}, 2000);

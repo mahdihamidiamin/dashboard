@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('eot/Sahel-Black.eot');
+    src: url('eot/Sahel-Blackd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/Sahel-Black.woff2') format('woff2'),
+    url('woff/Sahel-Black.woff') format('woff'),
+    url('ttf/Sahel-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('eot/Sahel-Bold.eot');
+    src: url('eot/Sahel-Boldd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/Sahel-Bold.woff2') format('woff2'),
+    url('woff/Sahel-Bold.woff') format('woff'),
+    url('ttf/Sahel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('eot/Sahel-SemiBold.eot');
+    src: url('eot/Sahel-SemiBoldd41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/Sahel-SemiBold.woff2') format('woff2'),
+    url('woff/Sahel-SemiBold.woff') format('woff'),
+    url('ttf/Sahel-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('eot/Sahel.eot');
+    src: url('eot/Saheld41d.eot?#iefix') format('embedded-opentype'),
+    url('woff2/Sahel.woff2') format('woff2'),
+    url('woff/Sahel.woff') format('woff'),
+    url('ttf/Sahel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
