@@ -8,17 +8,19 @@
     <title>Document</title>
     <script src="Scripts/jquery-1.8.3.min.js"></script>
 
-    <link rel="stylesheet" href="Css/all.min.css">
+    <link href="Css/base-file/all.min.css" rel="stylesheet">
     <script src="Scripts/all.min.js"></script>
     <script src="Scripts/custom.js"></script>
-    <link rel="stylesheet" href="Css/navbar.css">
+    <link href="Css/base-file/navbar.css" rel="stylesheet">
     <link rel="stylesheet" href="Css/r-slider.css">
-    <link rel="stylesheet" href="Css/nprogress.css">
+    <link href="Css/base-file/nprogress.css" rel="stylesheet">
     <script src="Scripts/nprogress.js"></script>
     <script src="Scripts/r-slider.js"></script>
-    <link rel="stylesheet" href="Css/Style.css">
 
+    <link href="Css/base-file/select2.min.css" rel="stylesheet">
+    <script src="Scripts/select/select2.full.min.js"></script>
 
+    <link href="Css/admin-panel/Style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
 <script>
     function menuBox(element, target) {
 
-        var tar = $("#" + target)
+        var tar = $("#" + target);
         debugger;
         if ($(tar).hasClass("active")) {
             $(tar).removeClass("active");
@@ -366,8 +368,8 @@
                                     چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                                     تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
                                 </p>
-                                <div class="form form-txt-btn">
-                                    <div class="form-group  ">
+                                <div class="form form-txt-btn ">
+                                    <div class="form-group">
                                         <a href="#" class="icon-input">
                                             <i class="fab fa-instagram"></i>
                                         </a>
@@ -375,12 +377,25 @@
 
                                     </div>
                                     <div class="form-group  ">
-                                <span class="icon-input blue">
-                                    <i class="far fa-at"></i>
-                                </span>
+                                        <span class="icon-input blue">
+                                             <i class="far fa-at"></i>
+                                        </span>
                                         <input type="email" name="email" placeholder="ایمیل">
 
                                     </div>
+                                    <div class="form-group default-group ">
+                                        <span class="icon-input gray">
+                                    <i>
+                                        .com
+                                    </i>
+                                        </span>
+                                        <label>
+                                            نام
+                                        </label>
+                                        <input name="" required type="text">
+
+                                    </div>
+
                                     <div class="form-group  ">
 
                                         <div class="checkbox check-purple">
@@ -419,7 +434,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5>ردیو باتن دایره ای</h5>
+                                <h5>چک باکس دایره ای</h5>
                                 <p class="card-dec">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است.
@@ -442,17 +457,88 @@
                                                 <label for="checkbox9">با قوانین موافقم</label>
                                             </div>
                                         </div>
+                                        <div class="row-group two ">
+                                            <div class="switchery checkbox check-green">
+                                                <input id="checkbox10" type="checkbox" value="1">
+                                                <label for="checkbox10"></label>
+                                            </div>
+                                            <div class="switchery small checkbox check-blue">
+                                                <input id="checkbox11" type="checkbox" value="1">
+                                                <label for="checkbox11"></label>
+                                            </div>
+                                            <div class="switchery small checkbox check-red">
+                                                <input id="checkbox12" type="checkbox" value="1">
+                                                <label for="checkbox12"></label>
+                                                <input id="checkbox13" type="checkbox" value="1">
+                                                <label for="checkbox13"></label>
+                                            </div>
+                                            <div class="switchery small checkbox check-yellow">
+
+                                            </div>
+                                            <div class="switchery small checkbox check-purple">
+                                                <input id="checkbox14" type="checkbox" value="1">
+                                                <label for="checkbox14"></label>
+                                            </div>
+                                        </div>
+
 
 
                                     </div>
                                 </div>
                             </div>
+
+                            <select class="select" style="width: 100%">
+                                <option selected="selected">نارنجی</option>
+                                <option>سفید</option>
+                                <option>بنفش</option>
+                            </select>
+
+                            <script>
+                                $(".select").select2({
+                                    tags: true,
+                                    dir: "rtl",
+                                    language: "fa"
+                                });
+                            </script>
                         </div>
                         <div class="col-12 col-md-4"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-8 ">
+            <div class="col-12 col-md-12 ">
+                <div class="card  card-default">
+                    <div class="card-header">
+                        <div class="card-title">
+                            فرم زیر را تکمیل کنید
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            ردیو باتن ها
+
+                        </h5>
+                        <p class="card-dec">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                            گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <div class="form form-traditional">
+                            <div class="form-group">
+                                <label>
+                                    موارد انتخابی حذف شوند ؟
+                                </label>
+                                <div class="radio radio-success">
+                                    <input disabled id="yes" name="optionyes" type="radio" value="yes">
+                                    <label for="yes">بله</label>
+                                    <input checked="checked" disabled id="no" name="optionyes" type="radio" value="no">
+                                    <label for="no">خیر</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
