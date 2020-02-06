@@ -20,7 +20,10 @@
     <script src="../../Scripts/select/select2.full.min.js"></script>
     <link href="../../Css/admin-panel/page.css" rel="stylesheet">
     <link href="Css/style.css" rel="stylesheet">
+    <?php
+    include('../../functions/functions.php');
 
+    ?>
 
 </head>
 <body>
@@ -160,6 +163,16 @@
     </div>
 
     <!--Slider-->
+    <div>
+        <h3>برند ها</h3>
+        <?php echo  getBrand() ?>
+        <?php getBrand() ?>
+    </div>
+    <div>
+        <h3>دسته ها</h3>
+
+        <?php echo  getCat() ?>
+    </div>
     <!--property-->
     <div class="property-box">
         <div class="col-lg-3 col-sm-6">
@@ -175,6 +188,8 @@
                         برای خرید بالای 100 هزار تومان
                     </p>
                 </div>
+
+
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">

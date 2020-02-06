@@ -1663,7 +1663,8 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
 .form-default .form-group label {
     color: #adadad;
 }
-.form-default .form-group input[type="text"], .form-default .form-group input[type="password"], .form-default .form-group input[type="email"], .form-traditional .form-group input[type="text"], .form-traditional .form-group input[type="password"], .form-traditional .form-group input[type="email"],
+
+.form-default .form-group input[type="text"], .form-default .form-group input[type="password"], .form-default .form-group input[type="email"], .form-traditional .form-group input[type="text"], .form-traditional .form-group input[type="password"], .form-traditional .form-group input[type="email"], .form-traditional textarea,
 .form-txt-btn .form-group input[type="text"], .form-txt-btn .form-group input[type="password"], .form-txt-btn .form-group input[type="email"], .select2-container--default .select2-selection--single {
     width: 100%;
     background-color: #fff;
@@ -1742,9 +1743,9 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
 
 /*default form && traditional form*/
 /* traditional form*/
-.form-traditional .form-group input[type="text"], .form-traditional .form-group input[type="password"], .form-traditional .form-group input[type="email"], .form-txt-btn .form-group input[type="text"], .form-txt-btn .form-group input[type="password"], .form-txt-btn .form-group input[type="email"] {
+.form-traditional textarea, .form-traditional .form-group input[type="text"], .form-traditional .form-group input[type="password"], .form-traditional .form-group input[type="email"], .form-txt-btn .form-group input[type="text"], .form-txt-btn .form-group input[type="password"], .form-txt-btn .form-group input[type="email"] {
     position: unset;
-    margin: 4px 0 8px 0;
+    margin: 4px 0 15px 0;
     display: inline-block;
     padding: 0 8px;
     min-height: 35px;
@@ -2188,3 +2189,8 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
 }
 /*Forms*/
 
+
+.select2-container {
+    width: 100% !important;
+    margin: 4px 0;
+}
