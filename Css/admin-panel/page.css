@@ -1752,12 +1752,13 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
     width: 100%;
 }
 
-.form-traditional .form-group label, .form-txt-btn .form-group label {
+.form-traditional .form-group label, .form-group .checkbox label {
     position: relative;
     top: 0;
     pointer-events: auto;
     right: 0;
-
+    color: #777;
+    font-size: 13px;
 }
 
 .form-traditional .form-group label small {
@@ -1911,8 +1912,8 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
     position: absolute;
     right: -21px;
     top: 3px;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 11px;
     transition: border .2s linear 0s, color .2s linear 0s;
 }
 
@@ -2194,3 +2195,91 @@ a, a:hover, a:focus, a:focus:active, a:active:hover {
     width: 100% !important;
     margin: 4px 0;
 }
+
+
+/*Login*/
+.bg-login:after {
+    width: 100%;
+    height: 100%;
+    background-color: #6d5cae;
+    content: '';
+    top: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+}
+
+.bg-login {
+    float: left;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 940px;
+    background-size: cover;
+}
+
+.white-box-login {
+    float: left;
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 80px 60px;
+}
+
+
+.white-box-login .card-header {
+    font-weight: 800;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.white-box-login .card-body h5 {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.white-box-login .row-group {
+    margin: 10px 0;
+}
+
+.white-box-login .checkbox input {
+    right: 0;
+}
+
+.white-box-login .checkbox {
+    padding-right: 20px;
+}
+
+.form-group > a {
+    font-size: 13px;
+    float: left;
+    padding: 5px 0;
+}
+
+.form-group.flat {
+    position: absolute;
+    right: 60px;
+    width: auto;
+    bottom: 20px;
+}
+
+/*Login*/
+
+
+/*BUTTON*/
+.btn, .form-group > a.btn {
+    float: right;
+    background: #6d5cae;
+    padding: 9px 39px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.btn-purple {
+}
+
+/*BUTTON*/

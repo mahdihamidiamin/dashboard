@@ -1,4 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Scripts/base-file/jquery-1.8.3.min.js"></script>
 
+    <link href="Css/base-file/all.min.css" rel="stylesheet">
+    <script src="Scripts/base-file/all.min.js"></script>
+    <script src="Scripts/custom.js"></script>
+    <link href="Css/base-file/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/r-slider.css">
+    <link href="Css/base-file/nprogress.css" rel="stylesheet">
+    <script src="Scripts/base-file/nprogress.js"></script>
+    <script src="Scripts/base-file/r-slider.js"></script>
+
+    <link href="Css/base-file/select2.min.css" rel="stylesheet">
+    <script src="Scripts/select/select2.full.min.js"></script>
+
+    <link href="Css/admin-panel/page.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<script>
+    function menuBox(element, target) {
+
+        var tar = $("#" + target);
+        debugger;
+        if ($(tar).hasClass("active")) {
+            $(tar).removeClass("active");
+        } else {
+            $(tar).addClass('active');
+        }
+
+    }
+
+    $(document).mouseup(function (e) {
+        var container = $("#user-image-menu");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+            $(container).removeClass("active");
+
+        }
+    });
+
+    $(document).ready(function () {
+
+    })
+</script>
+<div class="header">
+    <a class="mini-menu" href="">
+
+    </a>
+    <div class="user-profile-menu">
+        <a onclick="menuBox(this , 'user-image-menu')" class="user-img">
+            <img src="Img/avatar.jpg"/>
+            <span>مدیر سامانه</span>
+        </a>
+        <div class="user-image-menu" id="user-image-menu">
+        </div>
+
+
+    </div>
+    <div class="menu-setting">
+        <ul>
+            <li>
+                صفحات
+            </li>
+        </ul>
+    </div>
+</div>
+
+<nav class="r-nav navigation-menu side-nav close-nav ">
+    <div id="accordian" class="content-navigation-menu">
+        <div class="r-collapse">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="list-nav-content-header">
+            <a href="/" class="company-logo">
+                <img src="Img/Logo/logo_white.png" height="22" width="78"/>
+            </a>
+        </div>
+
+        <ul class="list-nav-content">
+
+            <li class="active main">
+                <a href="/">
+
+                    <span>داشبورد</span>
+                    <p> بروزرسانی جدید 1.2</p>
+                </a>
+                <span class="icon-menu">
+                  <i class="fas fa-home"></i>
+                </span>
+            </li>
+
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>صفحات</span>
+
+                </a>
+                <span class="icon-menu">
+             <i class="fas fa-th-large"></i>
+                </span>
+                <ul>
+                    <li>
+                        <a>
+                            <span>پایه</span>
+                        </a>
+                        <span class="icon-menu">
+                              <i class=""> پ</i>
+                         </span>
+                        <ul>
+                            <li>
+                                <a href="info.html">
+                                    <span>باتن ها</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>باتن لیست ها</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="history.html">
+                                    <span>آیکون ها</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>سفارشی</span>
+                        </a>
+                        <span class="icon-menu">
+                              <i class=""> س</i>
+                         </span>
+                    </li>
+                    <li>
+                        <a href="history.html">
+                            <span>آیکون ها</span>
+                        </a>
+                        <span class="icon-menu">
+                              <i class="">آ</i>
+                         </span>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>فرم ها</span>
+
+
+                </a>
+
+                <span class="icon-menu">
+                             <i class="fas fa-file-alt"></i>
+                         </span>
+                <ul>
+                    <li>
+                        <a href="form-element.html">
+
+                            <span> فرم ها 1</span>
+                        </a>
+                        <span class="icon-menu">
+                              <i class="">ف</i>
+                         </span>
+                    </li>
+                    <li>
+                        <a href="service-item.html">
+
+                            <span>درباره خدمات</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-btn">
+
+                    <span>اخبار</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="news.html">
+
+                            <span>اخبار</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news-item.html">
+
+                            <span>ادامه مطلب اخبار</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.html">
+
+                    <span>تماس با ما</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+</nav>
 <div class="page-content-wrapper ">
     <div class="breadcrumb"></div>
     <div class="container-xl">
